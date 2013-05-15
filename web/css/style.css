@@ -296,3 +296,120 @@ FOOTER
 	position: relative;
 	bottom: -1px;
 }
+/*************************************/
+/* New Registration and Setup classes */
+/**************************************/
+
+
+#classwrapper {
+	/* Center wrapper perfectly */
+	
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+	
+#classes {
+		padding: 10px;
+	margin-right: 20px;
+	margin-top: 50px;
+	
+	background: none;
+	border: none;
+	cursor: pointer;
+	
+	font-weight: 300;
+	font-size: 30px;
+	color: #414848;
+}	
+
+#incntre_title {
+ float: left;
+ padding: 10px;
+ }	
+	
+/* Input field */
+.login-form .content .reg_title {
+	
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	float: center;
+}
+
+.classbox2 {
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+	z-index:5;
+	
+	
+	background: #f3f3f3;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	
+	
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.class_name {
+	 padding: 10px;
+	 font-size: 22px;
+}	
+
+.classbox2 .content  {
+	 padding: 10px;
+}	
+
+.classbox2 .content .description {
+	 padding: 10px;
+	 font-size: 18px;
+}	
+
+.classbox2 .content .vm_info_title {
+	 padding: 10px;
+	 font-size: 20px;
+}	
+
+.classbox2 .content .access_info {
+	padding: 10px;
+	 font-size: 18px;
+}	
+
+hr.foo {
+	height: 20px;
+	color: #fff;
+}
+
+#user {
+	float: right;	
+ 	font-size: 14px;
+ 	text-align: top;
+ 	
+ }
+ 
+#radio {
+	padding: 10px; 
+ }
+ 
+#progressbar {
+	color : lightgreen;
+	height: 8px;
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+	
+.class1 {
+	margin-top 30px;
+      background: #d4dedf;
+      padding 10px;
+      }	
+      
+.time_rem {
+	padding: 10px;
+	}
+ 

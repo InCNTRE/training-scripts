@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<!--------------------
+LOGIN FORM
+by: Amit Jakhu
+www.amitjakhu.com
+--------------------->
+
+<!--META-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login Form</title>
+
+<!--STYLESHEETS-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+
+<!--SCRIPTS-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!--Slider-in icons-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".username").focus(function() {
+		$(".user-icon").css("left","-48px");
+	});
+	$(".username").blur(function() {
+		$(".user-icon").css("left","0px");
+	});
+	
+	$(".password").focus(function() {
+		$(".pass-icon").css("left","-48px");
+	});
+	$(".password").blur(function() {
+		$(".pass-icon").css("left","0px");
+	});
+	
+    $( "#radio" ).buttonset();
+    $( "button" )
+      .button()
+      .click(function( event ) {
+        event.preventDefault();
+      });
+      
+      $( "#progressbar" ).progressbar({
+      value: 37
+    });
+});
+</script>
+
+</head>
+<body>
+
+<!--WRAPPER-->
+<div id="classwrapper">
+
+
+<!--LOGIN FORM-->
+   <div class="classbox2">
+	<!--HEADER-->
+    <div class="header">
+    <!--TITLE--><h1 id="incntre_title">InCNTRE Training Tools</h1><!--END TITLE-->
+   				<div id="user"><img src="images/simpson_buddy.png">chsmall@indiana.edu</div>
+    <!--END HEADER-->
+	</div>
+	<!--CONTENT-->
+    <div class="content">
+		<div id="classes">Virtual Machines</div>
+		
+		<button>Add a code to enable more VMs</button>
+		
+		<hr class="foo">
+		<div class="class1">
+			<div class="class_name">OpenFlow Training Workshop VM</div>
+			
+			<div class="description">The OpenFlow Training Workshop VM provides a means to explore the 
+			software used in OpenFlow networks. This VM is used in the 
+			<a href="http://tinyurl.com/nanog57-roster">OpenFlow Training Workshop</a>
+			conducted by InCNTRE. The VM contains the following software Mininet, PoX, Wireshark
+			with the OpenFlow plugin, and the Open DayLight Controller
+			</div> 
+			
+			<div class="vm_info_title">Access Information</div>
+			<div class="access_info"> To access the VM, 
+			   ssh to <strong>vm1.training.incntre.org</strong> using the username <strong>chsmall</strong>
+				<p>	 
+			 	To access using the X11 desktop over the web connect to:
+			 	
+			 	<a href="http://vm1.training.incntre.org:8090/guacamole">http://vm1.training.incntre.org:8090/guacamole</a>
+				</p>
+			</div> 			
+			 
+			<div class="vm_info_title">Start/Stop VM</div>
+		
+	 		<form>
+  				<div id="radio">
+    				<input type="radio" id="start" name="radio" /><label for="start">Start</label>
+    				<input type="radio" id="stop" name="radio" checked="checked" /><label for="stop">Stop</label>
+
+ 				</div>
+			</form>
+					
+			
+			<div class="vm_info_title">Time Remaining</div>
+			
+			<div id="progressbar"></div>			
+				<div class="time_rem">There is 63 out of 100 hours of VM time remaining </div>
+		</div>
+			<!--END Class1-->
+	 
+    </div>
+    <!--END CONTENT-->
+    
+
+
+</div>
+<!--END WRAPPER-->
+</div>
+<!--END CLASSBOX-->
+<!--GRADIENT--><div class="gradient"></div><!--END GRADIENT-->
+
+</body>
+</html>
